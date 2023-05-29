@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,400;1,
+    700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <title>Recreating WeB BASE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="website" id="website">
+        <div class="side-bar">
+            <div class="logo">
+                <img class="logo_image" src="logo.png" alt="Logo">
+                <div>
+                    <h2 class="logo_name">HydrauLic</h2>
+                    <p class="logo_name2">HydrauLic Laboratory Integrated Calculator</p>
+                </div>
+            </div>
+            <div class="dashboard">
+                <button class="dashboard_button" id="button1">
+                    <img class="dashboard_icon" src="dashboard.png">
+                    Dashboard
+                </button>
+            </div>
+            <div class="manometer">
+                <button class="manometer_button" id="button2">
+                    <img class="manometer_icon" src="manometer.png">
+                    Manometer
+                </button>
+                <div class="manometer_popup">
+                    <div class="manometer-subset">
+                        <button class="manometerButton" id="button3">
+                            Piezometer
+                        </button>
+                
+                        <button class="manometerButton" id="button4">
+                            U tube
+                        </button>
+                
+                        <button class="manometerButton" id="button5">
+                            Differential
+                        </button>
+                
+                        <button class="manometerButton" id="button6">
+                            Inclined
+                        </button>
+                
+                        <button class="manometerButton" id="button7">
+                            Invert U-tube
+                        </button>
+                
+                        <button class="manometerButton" id="button8">
+                            Multi-tube
+                        </button>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="venturi_meters">
+                <button class="venturi_button" id="button9">
+                    <img class="venturi_icon" src="venturimeter.png">
+                     Venturi meters
+                 </button>
+
+                <div class="venturimeter_popup">
+                    <div class="venturimeter-subset">
+                        <button class="venturimeterButton" id="button10">
+                            Horizontal
+                        </button>
+                
+                        <button class="venturimeterButton" id="button11">
+                            Vertical
+                        </button>
+                
+                        <button class="venturimeterButton" id="button12">
+                            Inclined
+                        </button>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="orifice_meters">
+                <button class="orifice_button" id="button13">
+                    <img class="orifice_icon" src="orificemeter.png">
+                    Orifice meters
+                </button>
+
+                <div class="orificemeter_popup">
+                    <div class="orificemeter-subset">
+                        <button class="orificemeterButton" id="button14">
+                            Constant Head
+                        </button>
+                
+                        <button class="orificemeterButton" id="button15">
+                            Falling Head
+                        </button>
+                
+                        <button class="orificemeterButton" id="button16">
+                            Orifice and Free Jet Flow
+                        </button>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="youtube_videos">
+                <button class="youtube_button" id="button17">
+                    <img class="youtube_icon" src="youtube.png">
+                    Youtube Videos
+                </button>
+            </div>
+
+            <div class="notes">
+                <button class="notes_button" id="button18">
+                    <img class="notes_icon" src="notes.png">
+                    Notes
+                </button>
+            </div>
+
+            <div class="logout">
+                <button class="logout_button" id="button19">
+                    <img class="logout_icon" src="logout.png">
+                    Logout
+                </button>
+            </div>
+
+            <div class="help">
+                <button class="help_button" id="button20">
+                    <img class="help_icon" src="help.png">
+                    Help
+                </button>
+            </div>
+        </div>
+        
+        <div class="content"> 
+            <div class="header">
+                <div class="title">
+                    <h1 id="title-content">Dashboard</h1>
+                </div>
+                <div class="search-bar">
+                    <form id="searchForm" action="/search" method="get">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="searchInput" name="query" placeholder="Search here">
+                        <i class="fas fa-microphone mic-icon"></i> 
+                    </form>
+                    <img class="profile-pic" src="profile.jpg" alt="user pic">
+                </div>
+            </div>
+            
+            <div class="dashboard-content">
+                <div class="dashboard-1">
+                    <div class="dashboard-1-1">
+                        <div class="dash1">
+                            <div>
+                                <h2 id="definiton">Hello Claire!</h2>
+                                <p class="definiton-details" id="def-details">Learn anytime, anywhere. Boost your skills with flexible online laboratory.</p>
+                            </div>
+                        </div>
+                        <div id="sticker">
+                            <img class="sticker-image"  src="school.png" alt="sticker">
+                        </div>
+                        <div class="dash2" id="dash2">
+                            <h2 id="formula">Formula</h2>
+                            <div class="manometer-formula" id="manometer-formula">
+                                <div class="equation-layout">
+                                    <h3 class="equation">Р = ρ<sub>m</sub> ɡ h</h3>
+                                </div>
+                                <p class="where">Where:</p>
+                                <p>
+                                    <li>P = the measured pressure in N/m<sup>2</sup></li>
+                                    <li>ρ<sub>m</sub> = the density of the manomete fluid in kg/m<sup>3</sup></li>
+                                    <li>h = the manometer height difference in m</li>
+                                    <li>g = the acceleration due to greavit in m/s<sup>2</sup></li>
+                                </p>
+                            </div>
+                            <div class="piezometer-formula" id="piezometer-formula">
+                                <div class="equation-layout">
+                                    <h3 class="equation">Р = ρ<sub>m</sub> ɡ h</h3>
+                                </div>
+                                <p class="where">Where:</p>
+                                <p>
+                                    <li>P = the measured pressure in N/m<sup>2</sup></li>
+                                    <li>ρ<sub>m</sub> = the density of the manomete fluid in kg/m<sup>3</sup></li>
+                                    <li>h = the manometer height difference in m</li>
+                                    <li>g = the acceleration due to greavit in m/s<sup>2</sup></li>
+                                </p>
+                            </div>
+                            <div class="utube-formula" id="utube-formula">
+                                <div class="equation-layout">
+                                    <h3 class="equation">Р = ρ<sub>m</sub> ɡ h</h3>
+                                </div>
+                                <p class="where">Where:</p>
+                                <p>
+                                    <li>P = the measured pressure in N/m<sup>2</sup></li>
+                                    <li>ρ<sub>m</sub> = the density of the manomete fluid in kg/m<sup>3</sup></li>
+                                    <li>h = the manometer height difference in m</li>
+                                    <li>g = the acceleration due to greavit in m/s<sup>2</sup></li>
+                                </p>
+                            </div>
+                            <div class="differential-formula" id="differential-formula">
+                                <div class="equation-layout">
+                                    <h3 class="equation">Р = ρ<sub>1</sub> p<sub>2</sub>=(p<sub>m</sub>-p<sub>f</sub>)gh</h3>
+                                </div>
+                                <p class="where">Where:</p>
+                                <p>
+                                    <li>P = the measured pressure in N/m<sup>2</sup></li>
+                                    <li>ρ<sub>1</sub> - ρ<sub>2</sub> = the pressure difference</li>
+                                    <li>ρ<sub>m</sub> = the density of the manometer fluid in kg/m<sup>3</sup></li>
+                                    <li>ρ<sub>f</sub> = the density of the manometer fluid in kg/m<sup>3</sup></li>
+                                    <li>h = the manometer height difference in m</li>
+                                    <li>g = the acceleration due to greavit in m/s<sup>2</sup></li>
+                                </p>
+                            </div>
+                            <div class="inclined-formula" id="inclined-formula">
+                                <div class="equation-layout">
+                                    <h3 class="equation">Р =ρ<sub>m</sub>ɡLsin(&theta;)</h3>
+                                </div>
+                                <p class="where">Where:</p>
+                                <p>
+                                    <li>P = the measured pressure in N/m<sup>2</sup></li>
+                                    <li>ρ<sub>1</sub> - ρ<sub>2</sub> = the pressure difference</li>
+                                    <li>ρ<sub>m</sub> = the density of the manometer fluid in kg/m<sup>3</sup></li>
+                                    <li>ρ<sub>f</sub> = the density of the manometer fluid in kg/m<sup>3</sup></li>
+                                    <li>h = the manometer height difference in m</li>
+                                    <li>g = the acceleration due to greavit in m/s<sup>2</sup></li>
+                                </p>
+                            </div>
+                            <div class="invert-formula" id="invert-formula">
+                                <div class="equation-layout">
+                                    <h3 class="equation">Р = (ρ<sub>1</sub> - ρ<sub>2</sub>) = (ρ<sub>1</sub> - ρ<sub>2</sub>)ɡh</h3>
+                                </div>
+                                <p class="where">Where:</p>
+                                <p>
+                                    <li>P = the measured pressure in N/m<sup>2</sup></li>
+                                    <li>ρ<sub>1</sub> - ρ<sub>2</sub> = the pressure difference</li>
+                                    <li>ρ<sub>m</sub> = the density of the manometer fluid in kg/m<sup>3</sup></li>
+                                    <li>ρ<sub>f</sub> = the density of the manometer fluid in kg/m<sup>3</sup></li>
+                                    <li>h = the manometer height difference in m</li>
+                                    <li>g = the acceleration due to greavit in m/s<sup>2</sup></li>
+                                </p>
+                            </div>
+                            <div class="multiTube-formula" id="multiTube-formula">
+                                <div class="equation-layout">
+                                    <h3 class="equation">P<sub>a</sub> + y<sub>1</sub>(h<sub>1</sub>) - y<sub>2</sub>(h<sub>3</sub>)- y<sub>3</sub>(h<sub>3</sub>)=P<sub>b</sub></h3>
+                                </div>
+                                <p class="where">Where:</p>
+                                <p>
+                                    <li>P = the measured pressure in N/m<sup>2</sup></li>
+                                    <li>ρ<sub>1</sub> - ρ<sub>2</sub> = the pressure difference</li>
+                                    <li>ρ<sub>m</sub> = the density of the manometer fluid in kg/m<sup>3</sup></li>
+                                    <li>ρ<sub>f</sub> = the density of the manometer fluid in kg/m<sup>3</sup></li>
+                                    <li>h = the manometer height difference in m</li>
+                                    <li>g = the acceleration due to greavit in m/s<sup>2</sup></li>
+                                </p>
+                            </div>
+
+                            <div class="venturi-formula" id="venturi-formula">
+                                <div class="equation-layout">
+                                    <h3><img class="equation-image" src="venturiformula.png"></h3>
+                                </div>
+                                <p class="where">Where:</p>
+                                <p>
+                                    <li>V = fluid velocity</li>
+                                    <li>&Delta;P = the pressure difference</li>
+                                    <li>Q = fluid flow rate</li>
+                                    <li>A = cross-sec.area</li>
+                                    <li>ρ = fluid density</li>
+                                    <li>d<sub>1</sub> = dia.of pipe</li>
+                                    <li>d<sub>2</sub> = dia.of pipe</li>
+                                </p>
+                            </div>
+                            <div class="horizontal-formula" id="horizontal-formula">
+                                <div class="equation-layout">
+                                    <h3><img class="equation-image" src="venturiformula.png"></h3>
+                                </div>
+                                <p class="where">Where:</p>
+                                <p>
+                                    <li>V = fluid velocity</li>
+                                    <li>&Delta;P = the pressure difference</li>
+                                    <li>Q = fluid flow rate</li>
+                                    <li>A = cross-sec.area</li>
+                                    <li>ρ = fluid density</li>
+                                    <li>d<sub>1</sub> = dia.of pipe</li>
+                                    <li>d<sub>2</sub> = dia.of pipe</li>
+                                </p>
+                            </div>
+                            <div class="vertical-formula" id="vertical-formula">
+                                <div class="equation-layout">
+                                    <h3><img class="equation-image" src="venturiformula.png"></h3>
+                                </div>
+                                <p class="where">Where:</p>
+                                <p>
+                                    <li>V = fluid velocity</li>
+                                    <li>&Delta;P = the pressure difference</li>
+                                    <li>Q = fluid flow rate</li>
+                                    <li>A = cross-sec.area</li>
+                                    <li>ρ = fluid density</li>
+                                    <li>d<sub>1</sub> = dia.of pipe</li>
+                                    <li>d<sub>2</sub> = dia.of pipe</li>
+                                </p>
+                            </div>
+                            <div class="venInclined-formula" id="venInclined-formula">
+                                <div class="equation-layout">
+                                    <h3><img class="equation-image" src="venturiformula.png"></h3>
+                                </div>
+                                <p class="where">Where:</p>
+                                <p>
+                                    <li>V = fluid velocity</li>
+                                    <li>&Delta;P = the pressure difference</li>
+                                    <li>Q = fluid flow rate</li>
+                                    <li>A = cross-sec.area</li>
+                                    <li>ρ = fluid density</li>
+                                    <li>d<sub>1</sub> = dia.of pipe</li>
+                                    <li>d<sub>2</sub> = dia.of pipe</li>
+                                </p>
+                            </div>
+                            <div class="orifice-formula" id="orifice-formula">
+                                <div class="equation-layout">
+                                    <h3><img class="equation-image" src="orificeformula.png"></h3>
+                                </div>
+                                <p class="where">Where:</p>
+                                <p>
+                                    <li>V = fluid velocity</li>
+                                    <li>&Delta;P = the pressure difference</li>
+                                    <li>Q = fluid flow rate</li>
+                                    <li>A = cross-sec.area</li>
+                                    <li>ρ = fluid density</li>
+                                    <li>d<sub>1</sub> = dia.of pipe</li>
+                                    <li>d<sub>2</sub> = dia.of pipe</li>
+                                </p>
+                            </div>
+                            <div class="constant-formula" id="constant-formula">
+                                <div class="equation-layout">
+                                    <h3><img class="equation-image" src="constantformula.png"></h3>
+                                </div>
+                                <p class="where">Where:</p>
+                                <p>
+                                    <li>C<sub>d</sub> = C<sub>c</sub>C<sub>v</sub>; coefficient of discharge</li>
+                                    <li>C<sub>c</sub> = A<sub>c</sub>/A<sub>o</sub>; coefficient of constraction</li>
+                                    <li>C<sub>v</sub> = coefficient of velocity</li>
+                                    <li>A<sub>o</sub> = coefficient of orifice</li>
+                                    <li>Q = discharge; A<sub>c</sub> = area of the jet of vena contracta</li>
+                                </p>
+                            </div>
+                            <div class="falling-formula" id="falling-formula">
+                                <div class="equation-layout">
+                                    <h3><img class="equation-image" src="fallingfomula.png"></h3>
+                                </div>
+                                <p class="where">Where:</p>
+                                <p>
+                                    <li>C<sub>d</sub> = C<sub>c</sub>C<sub>v</sub>; coefficient of discharge</li>
+                                    <li>h<sub>1</sub> = head at the start</li>
+                                    <li>h<sub>2</sub> = head at the end</li>
+                                    <li>C<sub>d</sub> = C<sub>c</sub>C<sub>v</sub>; discharge coefficient</li>
+                                </p>
+                            </div>
+                            <div class="jetflow-formula" id="jetflow-formula">
+                                <div class="equation-layout">
+                                    <h3><img class="equation-image" src="jetflowformula.png"></h3>
+                                </div>
+                                <p class="where">Where:</p>
+                                <p>
+                                    <li>C<sub>d</sub> = C<sub>c</sub>C<sub>v</sub>; coefficient of discharge</li>
+                                    <li>A<sub>2</sub> = area of the orifice</li>
+                                    <li>g = acceleration due to gravity (9.81 m/s<sup>2</sup>)</li>
+                                    <li>&Delta;h = the difference in the height of the liquid level above the center of the orifice</li>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="utubedisplay">
+                        <div class="dashboard-1-2">
+                            <div class="dashboard-1-2-1">
+                                <div class="utube-pic">
+                                    <img class="utube-image" src="U-tube.png" alt="">
+                                </div>
+                                <div class="details">
+                                    <p class="pmgh-explaination">U-TUBE MANOMETER measuring pressure relative to atmosphere (gauge pressure) equation.</p>
+                                    <div class="for">
+                                        <p class="pmgh">Р = ρ<sub>m</sub>ɡh</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="arrow-button">
+                                <button class="arrow-left"><img src="left-arrow.png" alt="left"></button>
+                                <button class="arrow-right"><img src="right-arrow.png" alt="right"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="utube-simulation">
+                        <h3 class="simulation-text">Simulation</h3>
+                        <div class="utube">
+                            <div>
+                                <div id="container">
+                                    <div class="manometertube">
+                                        <div class="liquid" style="height: 0;"></div>
+                                    </div>
+                                    <div class="margin"></div>
+                                    <div class="manometertube">
+                                    <div class="liquid" style="height: 0;"></div>
+                                    </div>
+                                </div>    
+                                <div class="gauge">
+                                    <div class="gauge__body">
+                                    <div class="gauge__fill"></div>
+                                    <div class="gauge__cover"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h1>Pressure: <span id="pressure"></span></h1>
+                            <h1>height: <span id="height"></span></h1> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dashboard-2"> 
+                    <div class="temporary" id="temporary">
+                        <div class="input-container">
+                            <div class="pressure-design">
+                                <h3 class="pressure-header">PRESSURE</h3>
+                                <p>Pressure</p>
+                            </div>
+                            <div class="input-buttons">
+                                <button class="button-one"><img class="button-image" src="circlebutton.png">One</button>
+                                <button class="button-two"><img class="button-image" src="circlebutton.png">Two</button>
+                                <button class="button-three"><img class="button-image" src="circlebutton.png">Three</button>
+                            </div>
+                            <div class="input-design">
+                                <div class="space"></div>
+                                <p class="input-var">ρ = <input class="input" type="number" name="num1" id="num1"></p>
+                            </div>
+                            <div class="input-design">
+                                <div class="space"></div>
+                                <p class="input-var">g = <input class="input" type="number" name="num2" id="num2"></p>
+                            </div>
+                            <div class="input-design">
+                                <div class="space"></div>
+                                <p class="input-var">h = <input class="input" type="number" name="num3" id="num3"></p>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                    <div class="input-values" id="input"></div>
+                    <div class="dynamicCalendar" id="dynamicCalendar">
+                        <div class="wrapper" id="wrapper">
+                            <header>
+                              <p class="current-date"></p>
+                              <div class="icons">
+                                <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                                <span id="next" class="material-symbols-rounded">chevron_right</span>
+                              </div>
+                            </header>
+                            <div class="calendar">
+                              <ul class="weeks">
+                                <li>Sun</li>
+                                <li>Mon</li>
+                                <li>Tue</li>
+                                <li>Wed</li>
+                                <li>Thu</li>
+                                <li>Fri</li>
+                                <li>Sat</li>
+                              </ul>
+                              <ul class="days"></ul>
+                            </div>
+                            <div>
+                                <p class="last-open">Last Opened</p>
+                                <p class="topic">Topic: Example - Manometer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="youtube-links" id="links"> 
+                <iframe src="https://www.youtube.com/embed/qHPaHMvsXLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/0CKRGsLZh6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/5UsfyT1jq64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/lyk_HloXz-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/GsZyQFXOarA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
